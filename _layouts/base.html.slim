@@ -24,26 +24,30 @@ body.antialiased
       ul.right
         li.divider
           li
-            a href="#{site.base_url}/" Home
-        /%li.divider
-        /  %li
-        /    %a{:href=>"#{site.base_url}/blog"} Blog
+            a href="#{site.base_url}/about/" About
+        li.divider
+          li
+            a href="#{site.base_url}/news/" News
+        li.divider
+          li
+            a href="#{site.base_url}/projects/" Projects
+        li.divider
+          li
+            a href="#{site.base_url}/authors/" Authors
   .row
     .large-12.columns
       = content
-  footer.row(style='max-width: 100%')
+  footer.row style='max-width: 100%'
     hr
     .large-6.columns
       p(style='margin-bottom: .75em')
-        | &copy; #{site.org} #{Date.today.year}
-        br
-        | Built on Foundation. Baked by Awestruct.
+        | &copy; #{Date.today.year} #{site.org}
     .large-6.columns
       ul.inline-list.right
         li
-          a href="#{site.base_url}/"  Home
-        /%li
-        /  %a{:href=>"#{site.base_url}/blog"} Blog
+          a href="http://github.com/NetEase/" NetEase Github
+        li
+          a href="http://git-scm.com/" Git SCM
   script
     | document.write('<script src=' + ('__proto__' in {} ? '#{site.base_url}/javascripts/vendor/zepto' : '#{site.base_url}/javascripts/vendor/jquery') + '.js><\/script>')
   script src="#{site.base_url}/javascripts/foundation/foundation.js"
