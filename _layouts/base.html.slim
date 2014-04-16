@@ -37,17 +37,17 @@ body.antialiased
   .row
     .large-12.columns
       = content
-  footer.row style='max-width: 100%'
-    hr
+  footer.row.full-width
     .large-6.columns
-      p(style='margin-bottom: .75em')
-        | &copy; #{Date.today.year} #{site.org}
+      p &copy; #{Date.today.year} #{site.org}
     .large-6.columns
       ul.inline-list.right
         li
           a href="http://github.com/NetEase/" NetEase Github
         li
           a href="http://git-scm.com/" Git SCM
+        li
+          a href="#{site.base_url}/feed.atom" RSS
   script
     | document.write('<script src=' + ('__proto__' in {} ? '#{site.base_url}/javascripts/vendor/zepto' : '#{site.base_url}/javascripts/vendor/jquery') + '.js><\/script>')
   script src="#{site.base_url}/javascripts/foundation/foundation.js"

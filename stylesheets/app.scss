@@ -54,3 +54,18 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+body > footer {
+  background: lighten($topbar-bg, 15%);
+  color: $topbar-link-color;
+  padding-top: 13px;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: $topbar-link-color;
+  }
+}
+
+.row.full-width {
+  max-width: 100%;
+}
