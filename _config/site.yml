@@ -1,4 +1,11 @@
-name: Project Name
-title: Baked with Awestruct
-org: Organization
-base_url: ''
+name: NetEase OpenSource
+title: NetEase OpenSource
+org: NetEase.com, Inc.
+profiles:
+  development:
+    base_url: ''
+    # slim:
+    #   :pretty: true
+  production:
+    base_url: http://code.netease.com
+    compass_output_style: :compressed
